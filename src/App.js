@@ -8,7 +8,7 @@ const App = () => {
   const dispatch = useDispatch()
 
   //Для получения состояние нужно воспользоваться хуком useSelector, который параметром принимает функцию; сама функция принимает параметром состояние и из этого состояния мы получаем нужную переменную(смотри пример ниже)
-  const counter = useSelector((state) => state.counter)
+  const counter = useSelector((state) => state.counter.counter)
 
   const increment = () => {
     dispatch({ type: 'INCREMENT', payload: 2 })
